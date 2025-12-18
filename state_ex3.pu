@@ -1,0 +1,10 @@
+@startuml
+[*] --> Off
+
+Off --> On : スイッチを押す
+Off --> On : 周囲が暗くなる
+
+On --> Off : タイマー終了
+On --> Off : 手動でスイッチを押す
+On --> Off : 周囲が明るくなる
+@enduml

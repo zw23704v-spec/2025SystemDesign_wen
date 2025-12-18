@@ -1,0 +1,10 @@
+@startuml
+actor Client
+participant Server
+database Database
+
+Client -> Server : requestData()
+Server -> Database : query()
+Database --> Server : result
+Server --> Client : responseData()
+@enduml
